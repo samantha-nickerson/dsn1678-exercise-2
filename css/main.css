@@ -120,6 +120,11 @@ body {
   background-color: rgba(127, 219, 255, 0.8);
 }
 
+.chart__item:hover .chart__count{
+  top: -4em;
+  opacity: 1;
+}
+
 .chart__count {
   display: inline-block;
   left: -2.3em;
@@ -130,11 +135,14 @@ body {
   width: 4.6em;
   z-index: 1;
 
+
   background-color: #000;
   border-radius: 6px;
   opacity: 0;
 
   text-align: center;
+
+  transition: all 250ms linear;
 }
 
 .chart__count::after {
