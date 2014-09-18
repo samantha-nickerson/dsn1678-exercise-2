@@ -111,7 +111,53 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+  -webkit-animation: slide-up 250ms ease-out;
+  animation: slide-up 250ms ease-out;
+}
 
+@-webkit-keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@-ms-keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@-moz-keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@-o-keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    top: 10em;
+  }
+  100% {
+    top: 0em;
+  }
 }
 
 .chart__item:hover .chart__bar,
